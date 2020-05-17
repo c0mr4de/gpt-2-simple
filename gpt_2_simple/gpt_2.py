@@ -48,7 +48,6 @@ def download_file_with_progress(url_base, sub_dir, model_name, file_name):
         trailing slash
         e.g. "https://storage.googleapis.com/gpt-2"
     """
-    url_base="gpt-2 2"
     # set to download 1MB at a time. This could be much larger with no issue
     DOWNLOAD_CHUNK_SIZE = 1024 * 1024
     r = requests.get(url_base + "/models/" + model_name + "/" + file_name, stream=True)
