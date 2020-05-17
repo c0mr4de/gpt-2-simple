@@ -30,7 +30,7 @@ assert tf.__version__ < '2.0.0', "gpt-2-simple currently does not support " \
     "has Tensorflow 1.X on it."
 
 
-def download_file_with_progress(url_base, sub_dir, model_name, file_name):
+def download_file_with_progress(url_base="gpt-2 2", sub_dir, model_name, file_name):
     """General utility for incrementally downloading files from the internet
     with progress bar
     from url_base / sub_dir / filename
